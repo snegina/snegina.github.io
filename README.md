@@ -1,2 +1,1 @@
-# snegina.github.io
-My first hosting
+# CV
