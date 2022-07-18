@@ -21,7 +21,7 @@ while (isSunk == false) {
         alert("Всё же введи число от 0 до 6")
     } else {
         guesses = guesses + 1;
-        alert(guesses);
+        
         if (guess == location1 || guess == location2 || guess == location3) {
             alert("Попал");
             array.push(guess);
