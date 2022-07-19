@@ -3,7 +3,7 @@ let location1 = randomLoc;
 let location2 = location1 + 1;
 let location3 = location2 + 1;
 
-let guess;
+const guess;
 let hits = 0;
 let guesses = 0;
 let isSunk = false;
