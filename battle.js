@@ -1,7 +1,7 @@
-const randomLoc = Math.floor(Math.random() * 5);
-const location1 = randomLoc;
-const location2 = location1 + 1;
-const location3 = location2 + 1;
+let randomLoc = Math.floor(Math.random() * 5);
+let location1 = randomLoc;
+let location2 = location1 + 1;
+let location3 = location2 + 1;
 
 let guess;
 let hits = 0;
@@ -14,7 +14,7 @@ while (isSunk == false) {
     guess = prompt("Привет! Это мини игра морской бой. В 7 ячейках по горизонтали ••••••• (от нуля до шести) расположен 3х палубный корабль врага. Твоя задача потопить его за меньшее кол-во попыток. Стреляй! (введи число 0-6):");
     if (array.includes(guess)) {
         alert("Ты уже стрелял");
-        guesses = guess + 1;
+        guesses = guesses + 1;
         continue;
     }
     if (guess < 0 || guess > 6 || (typeof guess === "string" & isNaN(guess))) {
@@ -42,4 +42,3 @@ const accuracy = 3 / guesses;
 const stats = "Ты выстрелил " + guesses + " раз. Уровень твоей точности " + (accuracy.toFixed(2));
 
 alert(stats);
-
