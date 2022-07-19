@@ -3,11 +3,11 @@ const location1 = randomLoc;
 const location2 = location1 + 1;
 const location3 = location2 + 1;
 
-const guess;
-const hits = 0;
-const guesses = 0;
-const isSunk = false;
-const array = [];
+let guess;
+let hits = 0;
+let guesses = 0;
+let isSunk = false;
+let array = [];
 
 while (isSunk == false) {
     
