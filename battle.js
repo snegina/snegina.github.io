@@ -1,13 +1,13 @@
-var randomLoc = Math.floor(Math.random() * 5);
-var location1 = randomLoc;
-var location2 = location1 + 1;
-var location3 = location2 + 1;
+const randomLoc = Math.floor(Math.random() * 5);
+const location1 = randomLoc;
+const location2 = location1 + 1;
+const location3 = location2 + 1;
 
-var guess;
-var hits = 0;
-var guesses = 0;
-var isSunk = false;
-var array = [];
+const guess;
+const hits = 0;
+const guesses = 0;
+const isSunk = false;
+const array = [];
 
 while (isSunk == false) {
     
@@ -38,8 +38,8 @@ while (isSunk == false) {
     }
 }
 
-var accuracy = 3 / guesses;
-var stats = "Ты выстрелил " + guesses + " раз. Уровень твоей точности " + (accuracy.toFixed(2));
+const accuracy = 3 / guesses;
+const stats = "Ты выстрелил " + guesses + " раз. Уровень твоей точности " + (accuracy.toFixed(2));
 
 alert(stats);
 
