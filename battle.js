@@ -3,7 +3,7 @@ let location1 = randomLoc;
 let location2 = location1 + 1;
 let location3 = location2 + 1;
 
-const guess;
+let guess;
 let hits = 0;
 let guesses = 0;
 let isSunk = false;
@@ -38,7 +38,7 @@ while (isSunk == false) {
     }
 }
 
-const accuracy = 3 / guesses;
-const stats = "Ты выстрелил " + guesses + " раз. Уровень твоей точности " + (accuracy.toFixed(2));
+let accuracy = 3 / guesses;
+let stats = "Ты выстрелил " + guesses + " раз. Уровень твоей точности " + (accuracy.toFixed(2));
 
 alert(stats);
